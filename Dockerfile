@@ -27,6 +27,8 @@ RUN apt-get update && \
     apt install falkon -y  && \
     apt-get autoclean -y  && \
     apt-get autoremove
+    apt install nodejs
+    apt install npm
 
 COPY novnc.zip /novnc.zip
 COPY . /system
